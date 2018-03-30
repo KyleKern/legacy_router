@@ -23,8 +23,8 @@ def myNetwork():
     r1.cmd('sysctl -w net.ipv4.ip_forward=1')
 
     info( '*** Add hosts\n')
-    h2 = net.addHost('h2', cls=Host, ip='10.0.0.2', defaultRoute=None)
-    h1 = net.addHost('h1', cls=Host, ip='10.0.0.1', defaultRoute=None)
+    h2 = net.addHost('h2', cls=Host, ip='127.0.0.2', defaultRoute=None)
+    h1 = net.addHost('h1', cls=Host, ip='127.0.0.1', defaultRoute=None)
 
     info( '*** Add links\n')
     net.addLink(h1, r1)
